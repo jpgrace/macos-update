@@ -1,6 +1,8 @@
 # macos-update
 A small script for keeping MacOS computers up to date.
 
+_NOTE: This command is menat to be run as root. You should read through it and understand it entirely before running it on your machine._
+
 ## Why?
 
 Because keeping software up to date shouldn't be hard.
@@ -17,6 +19,18 @@ The [update script](bin/update.sh) consists of updating a number of global depen
 
 There is a `plist` file that schedules the update script to be run once a day around midnight.
 
+## Getting Started
+
+To get started, run:
+
+```
+$ source ./bin/setup.sh
+```
+
+### Dependencies
+
+- shellcheck: `brew install shellcheck`
+
 ## Commands
 
 ### plist-update
@@ -24,7 +38,7 @@ There is a `plist` file that schedules the update script to be run once a day ar
 Copies the plist files from the `plist` directory to the default `/Library/LaunchDaemons/` directory.
 
 ```
-$ source bin/plist-update.sh
+$ source ./bin/plist-update.sh
 ```
 
 ### plist-reload
@@ -32,7 +46,7 @@ $ source bin/plist-update.sh
 Unloads and then loads the plist files in the default `/Library/LaunchDaemons/` directory with the `launchctl` command.
 
 ```
-$ source bin/plist-reload.sh
+$ source ./bin/plist-reload.sh
 ```
 
 ### plist-check
@@ -40,7 +54,7 @@ $ source bin/plist-reload.sh
 Checks that all of the plist files have been loaded with the `launchctl` command without error.
 
 ```
-$ source bin/plist-check.sh
+$ source ./bin/plist-check.sh
 ```
 
 ### plist-deploy
@@ -48,5 +62,5 @@ $ source bin/plist-check.sh
 Runs all of the commands: plist-update, plist-reload, and plist-check at once.
 
 ```
-$ source bin/plist-deploy.sh
+$ source ./bin/plist-deploy.sh
 ```

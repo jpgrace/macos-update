@@ -5,11 +5,11 @@
     <key>Label</key>
     <string>com.personal.macos.update</string>
     <key>Program</key>
-    <string>/Users/jpgrace/git/macos-update/bin/update</string>
+    <string>/Users/jpgrace/git/macos-update/bin/update.sh</string>
     <key>KeepAlive</key>
     <false/>
     <key>RunAtLoad</key>
-    <false/>
+    <true/>
     <key>StartCalendarInterval</key>
     <dict>
         <key>Hour</key>
@@ -17,7 +17,5 @@
         <key>Minute</key>
         <integer>59</integer>
     </dict>
-    <key>StandardOutPath</key>
-    <string>/var/log/update.log</string>
 </dict>
 </plist>

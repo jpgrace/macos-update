@@ -6,6 +6,6 @@ brew upgrade
 brew cleanup
 npm install npm -g
 npm update -g
-sudo gem update --system
-sudo gem update
-sudo gem cleanup
+sudo yes | gem update --system
+sudo yes | gem update
+sudo yes | gem cleanup
