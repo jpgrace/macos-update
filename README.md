@@ -1,7 +1,7 @@
 # macos-update
 A small script for keeping MacOS computers up to date.
 
-_NOTE: This command is menat to be run as root. You should read through it and understand it entirely before running it on your machine._
+_NOTE: This command is meant to be run as root. You should read through it and understand it entirely before running it on your machine._
 
 ## Why?
 
