@@ -9,7 +9,7 @@ Because keeping software up to date shouldn't be hard.
 
 ## How it works
 
-The [update script](bin/update.sh) consists of updating a number of global dependencies. Specifically:
+The [update script](bin/update.sh) updates a number of global dependencies. Specifically:
 
 - softwareupdate: The system software update tool (see: `man softwareupdate` for more details).
 - Homebrew: update, upgrade, and cleanup
@@ -28,6 +28,8 @@ $ source ./bin/setup.sh
 ```
 
 ### Dependencies
+
+Aside from Homebrew;
 
 - shellcheck: `brew install shellcheck`
 
